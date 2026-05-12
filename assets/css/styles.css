@@ -1,5 +1,5 @@
 :root {
-  --bg: #0b1020;
+  --bg: #ba15416f;
   --bg-soft: #10172b;
   --surface: #ffffff;
   --surface-soft: #f5f7fb;
@@ -556,7 +556,7 @@ select {
 .site-form textarea,
 .site-form select {
   width: 100%;
-  border: 1px solid rgba(16, 24, 40, 0.14);
+  border: 1px solid #ba15416f;
   background: #fff;
   color: var(--text);
   border-radius: 14px;
