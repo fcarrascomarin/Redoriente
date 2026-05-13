@@ -2,11 +2,15 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Red Oriente | Consultoría para ordenamiento comercial y regulatorio</title>
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#161314" />
+    <title>Red Oriente | Consultoría comercial y regulatoria</title>
     <meta
       name="description"
-      content="Consultoría para comercios y malls chinos en la Región del Biobío. Diagnóstico inicial, observación en terreno, priorización de riesgos y acompañamiento para ordenar el negocio."
+      content="Consultoría comercial y regulatoria para comercios y negocios dirigidos por población migrante oriental. Unimos claridad operativa, acompañamiento profesional y un trato sin barreras culturales innecesarias."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="assets/img/logo-red-oriente.png" type="image/png" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
@@ -21,15 +26,28 @@
       <header class="site-header">
         <div class="container nav-wrapper">
           <a href="#inicio" class="brand" aria-label="Ir al inicio de Red Oriente">
-            <span class="brand"> <a href="./assets/img/logo.png"></a></span>
+            <img
+              class="brand-logo"
+              src="assets/img/logo-red-oriente.png"
+              alt="Logo de Red Oriente"
+              width="64"
+              height="64"
+              decoding="async"
+            />
             <span class="brand-text">
-              <strong>東方網絡</strong>
+              <strong>RED ORIENTE</strong>
               <small>Consultoría comercial y regulatoria</small>
-              <small>商業和監管諮詢</small>
+              <small>商業與合規顧問支持</small>
             </span>
           </a>
 
-          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Abrir menú principal"
+          >
             <span></span>
             <span></span>
             <span></span>
@@ -39,9 +57,8 @@
             <a href="#servicios">Servicios</a>
             <a href="#metodologia">Metodología</a>
             <a href="#equipo">Equipo</a>
-            <a href="#formularios">Formularios</a>
             <a href="#contacto">Contacto</a>
-            <a href="formularios.html" class="nav-button">Ir a formularios</a>
+            <a href="#contacto" class="nav-button">Solicitar contacto</a>
           </nav>
         </div>
       </header>
@@ -50,53 +67,53 @@
         <section id="inicio" class="hero-section">
           <div class="container hero-grid">
             <div class="hero-copy">
-              <p class="eyebrow">Consultoría para comercios con exposición regulatoria</p>
+              <p class="eyebrow">Acompañamiento profesional sin fricción cultural innecesaria</p>
               <h1>
-                Ordenar el negocio antes de la multa,
-                <span>con criterio, claridad y una ruta aplicable.</span>
+                Orden, claridad y confianza para
+                <span>hacer más simple la relación entre negocio, operación y cumplimiento.</span>
               </h1>
               <p class="hero-text">
-                Acompañamos a comercios, malls chinos y negocios de retail importado en la detección de riesgos visibles,
-                el levantamiento inicial de información y la priorización de medidas concretas para reducir exposición a
-                fiscalizaciones, sanciones y desorden operativo.
+                Red Oriente acompaña a comercios y negocios liderados por población migrante oriental con una consultoría
+                seria, cercana y comprensible. Nuestro enfoque busca reducir barreras culturales, ordenar la información
+                relevante del negocio y abrir una conversación profesional que permita avanzar con mayor seguridad.
               </p>
 
               <div class="hero-actions">
-                <a class="button button-primary" href="#contacto">Solicitar contacto</a>
-                <a class="button button-secondary" href="formularios.html">Completar formulario inicial</a>
+                <a class="button button-primary" href="#contacto">Quiero que me contacten</a>
+                <a class="button button-secondary" href="#servicios">Ver servicios</a>
               </div>
 
               <ul class="hero-points">
-                <li>Diagnóstico inicial claro y sin lenguaje innecesariamente técnico.</li>
-                <li>Visita, observación y levantamiento de información relevante.</li>
-                <li>Priorización de hallazgos para actuar con rapidez y orden.</li>
+                <li>Comunicación clara, trato respetuoso y enfoque profesional.</li>
+                <li>Mirada integrada entre operación, organización documental y exposición regulatoria.</li>
+                <li>Primera aproximación útil para clientes que necesitan entender mejor su situación.</li>
               </ul>
             </div>
 
-            <aside class="hero-card">
+            <aside class="hero-card" aria-label="Resumen del enfoque de trabajo">
               <div class="hero-card-inner">
-                <p class="card-label">Enfoque de trabajo</p>
-                <h2>Presentación + observación + levantamiento + próximos pasos</h2>
+                <p class="card-label">Cómo se presenta Red Oriente</p>
+                <h2>Una consultoría pensada para generar confianza desde el primer contacto</h2>
                 <p>
-                  Red Oriente funciona como una puerta de entrada profesional y ordenada para comercios que necesitan
-                  entender mejor su situación operativa, documental y regulatoria.
+                  No se trata solo de revisar un negocio. Se trata de abrir un canal de trabajo donde la claridad,
+                  el respeto y la comprensión cultural permitan identificar prioridades y ordenar próximos pasos.
                 </p>
                 <dl class="hero-metrics">
                   <div>
-                    <dt>1</dt>
-                    <dd>Primer contacto</dd>
+                    <dt>01</dt>
+                    <dd>Primer acercamiento profesional</dd>
                   </div>
                   <div>
-                    <dt>2</dt>
-                    <dd>Visita presencial</dd>
+                    <dt>02</dt>
+                    <dd>Lectura inicial del negocio</dd>
                   </div>
                   <div>
-                    <dt>3</dt>
-                    <dd>Informe inicial</dd>
+                    <dt>03</dt>
+                    <dd>Orientación clara y aplicable</dd>
                   </div>
                   <div>
-                    <dt>4</dt>
-                    <dd>Plan de acción</dd>
+                    <dt>04</dt>
+                    <dd>Canal formal de seguimiento</dd>
                   </div>
                 </dl>
               </div>
@@ -104,19 +121,19 @@
           </div>
         </section>
 
-        <section class="logo-band">
+        <section class="logo-band" aria-label="Pilares de valor">
           <div class="container logo-band-grid">
             <article>
-              <h3>Confianza en el primer acercamiento</h3>
-              <p>Presentación clara, tono profesional y foco en resolver antes que sancionar.</p>
+              <h3>Puente cultural y profesional</h3>
+              <p>La consultoría busca facilitar la conversación, no complejizarla con distancia, desconfianza o ruido.</p>
             </article>
             <article>
-              <h3>Observación útil</h3>
-              <p>Levantamos información accionable desde el local, sin perder tiempo en teoría vacía.</p>
+              <h3>Orden útil</h3>
+              <p>Traducimos observaciones en prioridades entendibles para que el cliente sepa por dónde empezar.</p>
             </article>
             <article>
-              <h3>Orden práctico</h3>
-              <p>Traducimos hallazgos en prioridades concretas para avanzar por etapas.</p>
+              <h3>Imagen sobria y confiable</h3>
+              <p>La plataforma está diseñada para proyectar seriedad, respeto y capacidad de acompañamiento real.</p>
             </article>
           </div>
         </section>
@@ -124,11 +141,11 @@
         <section id="servicios" class="section">
           <div class="container">
             <div class="section-heading">
-              <p class="eyebrow">Qué hacemos</p>
-              <h2>Una consultoría pensada para ordenar, explicar y orientar</h2>
+              <p class="eyebrow">Servicios</p>
+              <h2>Una presentación clara del trabajo que ofrece la consultoría</h2>
               <p>
-                No llegamos como fiscalizadores. Llegamos a mirar con método, detectar señales de riesgo y ayudar a que
-                el negocio entienda dónde conviene actuar primero.
+                Esta web funciona como carta de presentación para clientes que necesitan comprender quiénes somos,
+                qué hacemos y cómo se inicia una relación de trabajo seria y ordenada.
               </p>
             </div>
 
@@ -137,53 +154,52 @@
                 <span class="card-number">01</span>
                 <h3>Presentación del servicio</h3>
                 <p>
-                  Explicamos de forma simple qué observamos, cómo trabajamos y por qué conviene ordenar antes de enfrentar
-                  multas, clausuras o requerimientos más costosos.
+                  Explicamos con lenguaje claro cómo trabajamos, qué tipo de apoyo entregamos y por qué vale la pena
+                  ordenar el negocio con una mirada profesional y preventiva.
                 </p>
               </article>
 
               <article class="info-card">
                 <span class="card-number">02</span>
-                <h3>Levantamiento inicial</h3>
+                <h3>Lectura inicial del negocio</h3>
                 <p>
-                  Recopilamos información básica del establecimiento, del encargado, del idioma utilizado y de la situación
-                  general del local para construir un punto de partida útil.
+                  Tomamos un primer contacto para entender el contexto del comercio, el tipo de operación, el rubro
+                  y las principales inquietudes del cliente.
                 </p>
               </article>
 
               <article class="info-card">
                 <span class="card-number">03</span>
-                <h3>Detección de señales de riesgo</h3>
+                <h3>Apoyo sin barreras innecesarias</h3>
                 <p>
-                  Observamos aspectos visibles del negocio, coherencia formal, documentación básica y exposición general a
-                  revisiones o incumplimientos detectables.
+                  El objetivo es que la relación profesional no se vea entorpecida por diferencias culturales o idiomáticas
+                  que puedan resolverse con una aproximación mejor diseñada.
                 </p>
               </article>
 
               <article class="info-card">
                 <span class="card-number">04</span>
-                <h3>Priorización de mejoras</h3>
+                <h3>Orientación en prioridades</h3>
                 <p>
-                  No todo se corrige al mismo tiempo. Ordenamos hallazgos por urgencia, costo, facilidad de implementación e
-                  impacto preventivo.
+                  Ayudamos a distinguir qué temas conviene revisar primero y cómo avanzar de forma gradual y ordenada.
                 </p>
               </article>
 
               <article class="info-card">
                 <span class="card-number">05</span>
-                <h3>Canal de contacto formal</h3>
+                <h3>Canal formal de contacto</h3>
                 <p>
-                  Dejamos una vía clara de comunicación por correo y seguimiento para que cada siguiente paso quede
-                  documentado y no dependa solo de conversaciones informales.
+                  La plataforma deja un medio serio para iniciar conversación, enviar antecedentes básicos y dar continuidad
+                  a una relación comercial profesional.
                 </p>
               </article>
 
               <article class="info-card">
                 <span class="card-number">06</span>
-                <h3>Base para una plataforma futura</h3>
+                <h3>Base escalable</h3>
                 <p>
-                  Estandarizamos información desde el inicio, de modo que el proyecto pueda crecer luego hacia un sistema de
-                  seguimiento más robusto o tipo CRM.
+                  El sitio está preparado para crecer más adelante hacia seguimiento, automatizaciones o sistemas internos,
+                  sin partir con una solución innecesariamente compleja.
                 </p>
               </article>
             </div>
@@ -193,49 +209,37 @@
         <section id="metodologia" class="section section-dark">
           <div class="container">
             <div class="section-heading narrow light">
-              <p class="eyebrow">Cómo trabajamos</p>
-              <h2>Una ruta breve, clara y aplicable</h2>
+              <p class="eyebrow">Metodología</p>
+              <h2>Una ruta breve, profesional y comprensible</h2>
               <p>
-                La plataforma puede funcionar como carta de presentación pública, punto de contacto formal y puerta de
-                entrada para los formularios de trabajo utilizados antes o durante la visita presencial.
+                El foco inicial no es sobrecargar al cliente con procesos largos, sino crear una base de confianza,
+                recoger antecedentes esenciales y abrir una conversación útil sobre próximos pasos.
               </p>
             </div>
 
             <div class="timeline">
               <article class="timeline-item">
                 <span class="timeline-step">Paso 1</span>
-                <h3>Primer contacto</h3>
-                <p>
-                  El cliente conoce el servicio, entiende el enfoque y puede escribir por correo o dejar sus datos en el
-                  formulario público.
-                </p>
+                <h3>Conocer la consultoría</h3>
+                <p>El visitante entiende el enfoque, la propuesta de valor y el tipo de apoyo que puede solicitar.</p>
               </article>
 
               <article class="timeline-item">
                 <span class="timeline-step">Paso 2</span>
-                <h3>Visita y observación</h3>
-                <p>
-                  Se realiza una primera aproximación presencial y se completa la información inicial necesaria para levantar
-                  un diagnóstico básico.
-                </p>
+                <h3>Enviar antecedentes básicos</h3>
+                <p>El formulario reúne la información necesaria para iniciar una conversación seria y bien orientada.</p>
               </article>
 
               <article class="timeline-item">
                 <span class="timeline-step">Paso 3</span>
-                <h3>Orden de información</h3>
-                <p>
-                  Los formularios permiten centralizar datos y enviarlos al correo corporativo, facilitando el seguimiento y
-                  la trazabilidad del caso.
-                </p>
+                <h3>Responder con claridad</h3>
+                <p>El equipo recibe el mensaje por correo corporativo y puede responder de forma ordenada y trazable.</p>
               </article>
 
               <article class="timeline-item">
                 <span class="timeline-step">Paso 4</span>
-                <h3>Próximas acciones</h3>
-                <p>
-                  Con los datos levantados, se define si corresponde una orientación inicial, un informe, una segunda visita
-                  o un plan de mejora más detallado.
-                </p>
+                <h3>Definir próximos pasos</h3>
+                <p>Con la información inicial, se acuerda una conversación, visita o propuesta de trabajo más específica.</p>
               </article>
             </div>
           </div>
@@ -245,128 +249,135 @@
           <div class="container split-layout">
             <div>
               <p class="eyebrow">Equipo</p>
-              <h2>Un enfoque que combina operación, regulación y acceso cultural</h2>
+              <h2>Operación, regulación y acercamiento cultural en una misma propuesta</h2>
               <p>
-                El proyecto une visión operativa, lectura normativa y una aproximación comercial capaz de generar confianza
-                en la primera conversación. La idea no es solo detectar problemas, sino traducirlos en acciones posibles y
-                comprensibles para el cliente.
+                Red Oriente se apoya en una combinación estratégica: comprensión operativa del negocio, lectura regulatoria
+                y capacidad de construir confianza con clientes para quienes el aspecto cultural también influye en la decisión.
               </p>
               <p>
-                Puedes reemplazar este texto por los nombres definitivos del equipo, cargos, experiencia y cualquier
-                referencia estratégica que quieras destacar en la versión final.
+                Aquí puedes reemplazar estos textos por los nombres definitivos del equipo, sus cargos y la forma en que
+                quieres presentar sus credenciales en la versión pública final.
               </p>
             </div>
 
             <div class="cards-grid">
               <article class="profile-card">
-                <h3>Ingeniería y operación</h3>
-                <p>
-                  Diagnóstico de procesos, lectura de ineficiencias, orden interno, sostenibilidad y mejora gradual del
-                  funcionamiento del negocio.
-                </p>
+                <h3>Ingeniería y mejora operativa</h3>
+                <p>Lectura de procesos, orden del negocio, eficiencia y mirada estructurada sobre prioridades internas.</p>
               </article>
 
               <article class="profile-card">
-                <h3>Asesoría regulatoria y legal</h3>
-                <p>
-                  Identificación de exposición normativa, revisión de riesgos básicos y traducción de hallazgos a un lenguaje
-                  claro para la toma de decisiones.
-                </p>
+                <h3>Asesoría regulatoria</h3>
+                <p>Traducción clara de temas regulatorios relevantes para que el cliente comprenda su exposición y alternativas.</p>
               </article>
 
               <article class="profile-card">
-                <h3>Primer contacto y puente comercial</h3>
-                <p>
-                  Presentación inicial, generación de confianza y facilitación cultural o idiomática cuando ello mejora la
-                  calidad del acercamiento.
-                </p>
+                <h3>Primer contacto y confianza comercial</h3>
+                <p>Un puente inicial que reduce distancia, mejora la comunicación y fortalece el vínculo profesional.</p>
               </article>
             </div>
           </div>
         </section>
 
-
-        <section id="contacto" class="section">
+        <section id="contacto" class="section section-muted">
           <div class="container contact-layout">
             <div>
-              <p class="eyebrow">Contacto</p>
+              <p class="eyebrow">Formulario de contacto</p>
               <h2>Solicita una primera conversación</h2>
-                <div class="contact-details">
+              <p class="hero-text contact-intro">
+                Este es el único formulario público del sitio. Está pensado para recibir consultas iniciales y derivarlas
+                al correo corporativo de la consultoría.
+              </p>
+
+              <div class="contact-details">
                 <div>
-                  <span>Correo</span>
+                  <span>Correo principal</span>
                   <a href="mailto:contacto@tudominio.cl">contacto@tudominio.cl</a>
-                </div>
-                <div>
-                  <span>Correo de formularios</span>
-                  <a href="mailto:formularios@tudominio.cl">formularios@tudominio.cl</a>
                 </div>
                 <div>
                   <span>Zona de trabajo</span>
                   <p>Región del Biobío · Gran Concepción</p>
                 </div>
+                <div>
+                  <span>Observación</span>
+                  <p>Reemplaza el endpoint de Formspree y los correos antes de publicar el sitio.</p>
+                </div>
               </div>
             </div>
 
             <div class="form-card">
+              <div class="card-heading">
+                <p class="eyebrow">Contacto inicial</p>
+                <h2>Cuéntanos tu necesidad</h2>
+              </div>
+
               <form
                 id="contactForm"
                 class="site-form"
-                data-form-name="Contacto Web"
+                data-form-name="Contacto Web Red Oriente"
                 data-success-message="Gracias. Tu mensaje fue enviado correctamente."
                 data-error-message="No fue posible enviar el formulario. Revisa la configuración e inténtalo nuevamente."
                 action="https://formspree.io/f/TU_ENDPOINT_CONTACTO"
                 method="POST"
+                novalidate
               >
                 <input type="hidden" name="_subject" value="Nuevo contacto desde la web de Red Oriente" />
                 <input type="text" name="_gotcha" class="hidden-field" tabindex="-1" autocomplete="off" />
 
                 <div class="form-row">
-                  <label>
+                  <label for="nombre-encargado">
                     Nombre del encargado
-                    <input type="text" name="nombre_encargado" required />
+                    <input id="nombre-encargado" type="text" name="nombre_encargado" autocomplete="name" maxlength="80" required />
                   </label>
-                  <label>
+                  <label for="nombre-local">
                     Nombre del local o empresa
-                    <input type="text" name="nombre_local" required />
+                    <input id="nombre-local" type="text" name="nombre_local" autocomplete="organization" maxlength="120" required />
                   </label>
                 </div>
 
                 <div class="form-row">
-                  <label>
+                  <label for="correo-electronico">
                     Correo electrónico
-                    <input type="email" name="email" required />
+                    <input id="correo-electronico" type="email" name="email" autocomplete="email" maxlength="120" inputmode="email" required />
                   </label>
-                  <label>
+                  <label for="telefono-whatsapp">
                     Teléfono / WhatsApp
-                    <input type="tel" name="telefono" required />
+                    <input id="telefono-whatsapp" type="tel" name="telefono" autocomplete="tel" maxlength="30" inputmode="tel" pattern="[0-9+\-()\s]{6,30}" required />
                   </label>
                 </div>
 
                 <div class="form-row">
-                  <label>
+                  <label for="comuna">
                     Comuna
-                    <input type="text" name="comuna" />
+                    <input id="comuna" type="text" name="comuna" autocomplete="address-level2" maxlength="80" />
                   </label>
-                  <label>
+                  <label for="rubro">
                     Rubro
-                    <input type="text" name="rubro" placeholder="Ej.: bazar, mall chino, retail" />
+                    <input id="rubro" type="text" name="rubro" maxlength="100" placeholder="Ej.: bazar, mall chino, retail" />
                   </label>
                 </div>
 
-                <label>
+                <label for="idioma-principal">
                   Idioma principal
-                  <select name="idioma_principal">
+                  <select id="idioma-principal" name="idioma_principal" autocomplete="language">
                     <option value="">Seleccionar</option>
-                    <option>Español</option>
-                    <option>Chino mandarín</option>
-                    <option>Ambos</option>
-                    <option>Otro</option>
+                    <option value="Español">Español</option>
+                    <option value="Chino mandarín">Chino mandarín</option>
+                    <option value="Ambos">Ambos</option>
+                    <option value="Otro">Otro</option>
                   </select>
                 </label>
 
-                <label>
+                <label for="mensaje">
                   Mensaje
-                  <textarea name="mensaje" rows="5" placeholder="Cuéntanos brevemente qué necesitas."></textarea>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    maxlength="1200"
+                    placeholder="Cuéntanos brevemente qué necesitas."
+                    required
+                  ></textarea>
                 </label>
 
                 <button type="submit" class="button button-primary button-block">Enviar contacto</button>
@@ -381,25 +392,27 @@
         <div class="container footer-grid">
           <div>
             <strong>Red Oriente</strong>
-            <p>Consultoría comercial y regulatoria para negocios que necesitan orden, claridad y próximos pasos aplicables.</p>
+            <p>
+              Consultoría comercial y regulatoria orientada a construir una relación profesional clara, confiable y sin
+              obstáculos culturales innecesarios.
+            </p>
           </div>
 
           <div>
             <span>Navegación</span>
             <a href="#servicios">Servicios</a>
             <a href="#metodologia">Metodología</a>
-            <a href="formularios.html">Formulario de Contacto</a>
+            <a href="#contacto">Contacto</a>
           </div>
 
           <div>
-            <span>Contacto</span>
-            <a href="mailto:contacto@redoriente.cl">contacto@redoriente.cl</a>
-            <a href="mailto:formularios@redoriente.cl">formularios@redoriente.cl</a>
+            <span>Correo</span>
+            <a href="mailto:contacto@tudominio.cl">contacto@tudominio.cl</a>
           </div>
         </div>
       </footer>
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>
