@@ -2,199 +2,21 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=index.html#contacto" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Red Oriente | Formularios</title>
-    <meta
-      name="description"
-      content="Formulario de contacto"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <title>Red Oriente | Redirección</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <div class="site-shell">
-      <header class="site-header">
-        <div class="container nav-wrapper">
-          <a href="index.html" class="brand" aria-label="Volver al inicio de Red Oriente">
-            <span class="brand"> <a href="./logo.png"></a></span>
-            <span class="brand-text">
-              <strong>東方網絡</strong>
-              <small>Consultoría comercial y regulatoria</small>
-              <small>商業和監管諮詢</small>
-            </span>
-          </a>
-
-          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
-          <nav id="primary-nav" class="primary-nav" aria-label="Menú principal">
-            <a href="index.html#servicios">Servicios</a>
-            <a href="index.html#metodologia">Metodología</a>
-            <a href="index.html#equipo">Equipo</a>
-            <a href="#contacto-rapido">Contacto</a>
-            <a href="index.html" class="nav-button">Volver al inicio</a>
-          </nav>
-        </div>
-      </header>
-
-      <main>
-        <section class="hero-section hero-section-small">
-          <div class="container hero-grid hero-grid-single">
-            <div class="hero-copy narrow-copy">
-              <p class="eyebrow">Formularios de Contacto</p>
-              <p class="hero-text">
-                Esta sección está pensada para recoger datos básicos del cliente y generar una visita presencial o encuentro telemático (vía Google Meets).
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="container forms-intro-grid">
-            <article class="feature-card feature-card-highlight">
-              <h2>Formulario público de contacto</h2>
-              <p>
-                Para personas o empresas que recién conocen el servicio y quieren ser contactadas por la consultoría.
-              </p>
-            </article>
-
-           </div>
-        </section>
-
-        <section class="section section-muted">
-          <div class="container forms-grid">
-            <article class="form-card large-form-card">
-              <div class="card-heading">
-                <p class="eyebrow">Formulario 1</p>
-                <h2>Contacto inicial</h2>
-              </div>
-
-              <form
-                id="publicLeadForm"
-                class="site-form"
-                data-form-name="Formulario de Contacto Público"
-                data-success-message="Gracias. El formulario de contacto fue enviado correctamente."
-                data-error-message="No fue posible enviar el formulario. Revisa el endpoint configurado."
-                action="https://formspree.io/f/TU_ENDPOINT_CONTACTO"
-                method="POST"
-              >
-                <input type="hidden" name="_subject" value="Nuevo formulario público desde Red Oriente" />
-                <input type="text" name="_gotcha" class="hidden-field" tabindex="-1" autocomplete="off" />
-
-                <div class="form-row">
-                  <label>
-                    Nombre del local o empresa
-                    <input type="text" name="nombre_local" required />
-                  </label>
-                  <label>
-                    Nombre del encargado
-                    <input type="text" name="nombre_encargado" required />
-                  </label>
-                </div>
-
-                <div class="form-row">
-                  <label>
-                    Correo electrónico
-                    <input type="email" name="email" required />
-                  </label>
-                  <label>
-                    Teléfono / WhatsApp
-                    <input type="tel" name="telefono" required />
-                  </label>
-                </div>
-
-                <div class="form-row">
-                  <label>
-                    Comuna
-                    <input type="text" name="comuna" />
-                  </label>
-                  <label>
-                    Rubro principal
-                    <input type="text" name="rubro" />
-                  </label>
-                </div>
-
-                <label>
-                  Idioma principal
-                  <select name="idioma_principal">
-                    <option value="">Seleccionar</option>
-                    <option>Español</option>
-                    <option>Chino mandarín</option>
-                    <option>Ambos</option>
-                    <option>Otro</option>
-                  </select>
-                </label>
-
-                <label>
-                  ¿Ha tenido fiscalizaciones recientes?
-                  <select name="fiscalizacion_reciente">
-                    <option value="">Seleccionar</option>
-                    <option>Sí</option>
-                    <option>No</option>
-                    <option>No sabe</option>
-                  </select>
-                </label>
-
-                <label>
-                  Mensaje inicial
-                  <textarea name="mensaje" rows="5" placeholder="Describe brevemente la situación del negocio."></textarea>
-                </label>
-
-                <button type="submit" class="button button-primary button-block">Enviar formulario</button>
-                <p class="form-feedback" aria-live="polite"></p>
-              </form>
-            </article>
-
-          </div>
-        </section>
-
-        <section id="contacto-rapido" class="section">
-          <div class="container contact-strip">
-            <div>
-              <p class="eyebrow">Correos sugeridos</p>
-              <h2>Canales formales del proyecto</h2>
-            </div>
-
-            <div class="contact-strip-links">
-              <a href="mailto:contacto@redoriente.cl">contacto@redoriente.cl</a>
-              <a href="mailto:formularios@redoriente.cl">formularios@redoriente.cl</a>
-              <a href="index.html">Volver a la presentación del servicio</a>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div class="container footer-grid">
-          <div>
-            <strong>Red Oriente</strong>
-            <p>Base estática lista para GitHub Pages, dominio propio y recepción de formularios vía correo.</p>
-          </div>
-
-          <div>
-            <span>Navegación</span>
-            <a href="index.html">Inicio</a>
-            <a href="index.html#contacto">Contacto</a>
-            <a href="formularios.html">Formularios</a>
-          </div>
-
-          <div>
-            <span>Correo</span>
-            <a href="mailto:contacto@redoriente.cl">contacto@redoriente.cl</a>
-            <a href="mailto:formularios@redoriente.cl">formularios@redoriente.cl</a>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-    <script src="assets/js/main.js"></script>
+    <main class="redirect-page">
+      <div class="redirect-card">
+        <h1>Redireccionando al formulario de contacto</h1>
+        <p>
+          Esta versión del sitio ahora utiliza un único formulario público de contacto.
+          Si no se abre automáticamente, usa el siguiente enlace.
+        </p>
+        <a class="button button-primary" href="index.html#contacto">Ir al formulario de contacto</a>
+      </div>
+    </main>
   </body>
 </html>
