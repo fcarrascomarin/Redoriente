@@ -32,7 +32,7 @@ body {
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
-  background: linear-gradient(180deg, #09101d 0%, #0d1425 100%);
+  background: linear-gradient(180deg, #09101d 0%, #ba15416f 100%);
 }
 
 a {
@@ -67,7 +67,7 @@ select {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(18px);
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(243, 236, 200, 0.985);
   border-bottom: 1px solid var(--line);
 }
 
@@ -303,9 +303,9 @@ select {
 
 .hero-metrics div {
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.06);
+  background: #ba15416f;
   padding: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid #ba15416f;
 }
 
 .hero-metrics dt {
@@ -426,7 +426,7 @@ select {
   border-radius: 999px;
   align-items: center;
   justify-content: center;
-  background: rgba(16, 42, 86, 0.08);
+  background: #ba15416f;
   color: var(--primary);
   font-size: 0.86rem;
   font-weight: 800;
@@ -444,7 +444,7 @@ select {
 }
 
 .feature-card-highlight {
-  background: linear-gradient(155deg, #11264b 0%, #0f1a2f 100%);
+  background: linear-gradient(155deg, #ba15416f 0%, #7d0f2c6f 100%);
   border-color: transparent;
 }
 
@@ -462,7 +462,7 @@ select {
 
 .timeline-item {
   padding: 28px;
-  background: rgba(255, 255, 255, 0.04);
+  background: #ba15416f;
   border-color: var(--line-dark);
   box-shadow: none;
 }
@@ -558,8 +558,8 @@ select {
 .site-form input:focus,
 .site-form textarea:focus,
 .site-form select:focus {
-  border-color: rgba(16, 42, 86, 0.5);
-  box-shadow: 0 0 0 4px rgba(16, 42, 86, 0.08);
+  border-color: #ba15416f;
+  box-shadow: 0 0 0 4px #ba15416f;
 }
 
 .hidden-field {
@@ -606,8 +606,8 @@ select {
 
 .site-footer {
   padding: 38px 0;
-  background: #08101f;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: #ba15416f;
+  border-top: 1px solid #ba15416f;
 }
 
 .footer-grid {
