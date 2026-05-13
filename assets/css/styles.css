@@ -67,7 +67,7 @@ select {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(18px);
-  background: rgba(243, 236, 200, 0.985);
+  background: rgba(243, 236, 200, 0.618);
   border-bottom: 1px solid var(--line);
 }
 
