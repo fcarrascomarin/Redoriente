@@ -214,9 +214,6 @@ select {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(21, 18, 19, 0.42) 0%, rgba(21, 18, 19, 0.12) 100%),
-    radial-gradient(circle at top right, rgba(139, 39, 41, 0.14), transparent 30%);
   pointer-events: none;
 }
 
